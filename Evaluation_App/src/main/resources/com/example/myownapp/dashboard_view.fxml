@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.myownapp.DashboardController"
+      prefHeight="400.0" prefWidth="600.0"
+      alignment="TOP_CENTER">
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+
+
+
+    <children>
+
+
+
+        <HBox alignment="BASELINE_CENTER" prefHeight="50.0" prefWidth="200.0">
+            <children>
+
+
+
+                <Label alignment="CENTER" style="-fx-underline: true" text="Les Indicateurs RESSOURCES HUMAINES">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+
+                </Label>
+
+
+                <Region HBox.hgrow="ALWAYS" />
+
+
+                <HBox  spacing="10">
+                    <padding>
+                        <Insets top="20.0" />
+                    </padding>
+
+
+
+                    <children>
+
+
+
+                    </children>
+                </HBox>
+
+
+
+
+
+
+            </children>
+        </HBox>
+
+    <HBox alignment="BASELINE_LEFT" prefHeight="50.0" prefWidth="200.0">
+        <children>
+
+
+            <Label  text="1)- Effectif total: renseigne sur le dynamisme de l'entreprise  : " style="-fx-underline: true" VBox.vgrow="ALWAYS">
+                <font>
+                    <Font  size="20.0" />
+                </font>
+            </Label>
+
+
+
+            <Label fx:id="label_nombre_employees" alignment="CENTER" text="" VBox.vgrow="ALWAYS">
+                <font>
+                    <Font name="System Bold" size="20.0" />
+                </font>
+
+            </Label>
+
+
+
+
+        </children>
+
+        <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+        </padding>
+    </HBox>
+
+
+        <HBox alignment="BASELINE_LEFT" prefHeight="50.0" prefWidth="200.0">
+            <children>
+
+
+
+
+
+                <Label  alignment="CENTER" text="2) - l'Age moyen dans toute l'entreprise: " style="-fx-underline: true" VBox.vgrow="ALWAYS">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+
+                </Label>
+
+
+                <Label  fx:id="label_age_moyen" text="30 Ans"  VBox.vgrow="ALWAYS">
+                    <font>
+                        <Font  name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+
+
+
+
+
+            </children>
+
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </HBox>
+
+        <HBox alignment="BASELINE_LEFT" prefHeight="50.0" prefWidth="200.0">
+            <children>
+
+
+
+
+
+                <Label fx:id="ratio" alignment="CENTER" text="3) - Ratio Homme / Femme: " style="-fx-underline: true" VBox.vgrow="ALWAYS">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+
+                </Label>
+
+
+                <Label  fx:id="label_ratio" text=""  VBox.vgrow="ALWAYS">
+                    <font>
+                        <Font  name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+
+
+
+
+
+            </children>
+
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </HBox>
+
+
+        <HBox alignment="BASELINE_LEFT" prefHeight="50.0" prefWidth="200.0">
+            <children>
+
+
+
+
+
+                <Label fx:id="anciente" alignment="CENTER" text="4) - Ancienneté moyenne: " style="-fx-underline: true" VBox.vgrow="ALWAYS">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+
+                </Label>
+
+
+                <Label  fx:id="label_taux_anciente" text="0%"  VBox.vgrow="ALWAYS">
+                    <font>
+                        <Font  name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+
+
+
+
+
+            </children>
+
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </HBox>
+
+
+        <HBox alignment="BASELINE_LEFT" prefHeight="50.0" prefWidth="200.0">
+            <children>
+
+
+
+
+
+                <Label fx:id="turnover" alignment="CENTER" text="5) - Turnover (Taux de roulement): Pourcentage des employés ayant quitté l'entreprise depuis le début de la période" style="-fx-underline: true" VBox.vgrow="ALWAYS">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+
+                </Label>
+
+
+                <Label  fx:id="taux_roulement" text="0%"  VBox.vgrow="ALWAYS">
+                    <font>
+                        <Font  name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+
+
+
+
+
+            </children>
+
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </HBox>
+
+
+
+        <HBox alignment="BASELINE_LEFT" prefHeight="50.0" prefWidth="200.0">
+            <children>
+
+
+
+
+
+                <Label fx:id="promotion" alignment="CENTER" text="6) - Promotion interne : " style="-fx-underline: true" VBox.vgrow="ALWAYS">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+
+                </Label>
+
+
+                <Label  fx:id="taux_promotion" text="0%"  VBox.vgrow="ALWAYS">
+                    <font>
+                        <Font  name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+
+
+
+
+
+            </children>
+
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </HBox>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </children>
+
+
+
+</VBox>

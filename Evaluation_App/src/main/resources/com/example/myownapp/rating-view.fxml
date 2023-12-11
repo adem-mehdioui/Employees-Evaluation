@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import org.controlsfx.control.*?>
+
+<VBox fx:id="vbox_listemp" alignment="TOP_CENTER" prefHeight="450.0" prefWidth="700.0" spacing="20" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myownapp.RatingViewController">
+
+    <padding>
+        <Insets bottom="5.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+
+    <children>
+      <HBox alignment="BOTTOM_CENTER" prefHeight="50.0" prefWidth="200.0">
+         <children>
+      
+      
+      
+              <Label alignment="CENTER" style="-fx-underline: true" text="Liste de vos collègues">
+                  <font>
+                      <Font name="System Bold" size="20.0" />
+                  </font>
+      
+              </Label>
+
+
+             <Region HBox.hgrow="ALWAYS" />
+
+
+                     <HBox fx:id="filter" spacing="10">
+                         <padding>
+                             <Insets top="20.0" />
+                         </padding>
+
+
+
+                         <children>
+
+
+
+                         </children>
+                     </HBox>
+
+
+
+
+
+
+         </children>
+      </HBox>
+
+
+
+
+        <GridPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="449.0" prefWidth="755.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <!--
+        <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+        </padding>
+        -->
+        <TableView fx:id="mytableview" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="440.0" prefWidth="755.0" GridPane.columnIndex="0" GridPane.columnSpan="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0" GridPane.vgrow="ALWAYS" >
+
+            <columns>
+
+
+            </columns>
+            <items>
+                <!--
+                <FXCollections fx:factory="observableArrayList">
+                    <TestTableModel testNumber="100" testName="Test1234" testTime="0.34" bestMatch="99"/>
+                </FXCollections>
+                -->
+            </items>
+        </TableView>
+    </children>
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>
+
+
+
+
+        <HBox fx:id="hbox_bottom" maxHeight="-Infinity" prefHeight="158.0" prefWidth="680.0" spacing="10">
+
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+
+
+            <children>
+            <VBox alignment="TOP_CENTER" prefHeight="115.0" prefWidth="176.0">
+               <children>
+      
+      
+      
+                      <Rating fx:id="rate" visible="false" max="5" />
+      
+                      <Label fx:id="msg" alignment="CENTER" VBox.vgrow="ALWAYS">
+                </Label>
+               </children>
+            </VBox>
+            <ChoiceBox fx:id="choicebox_category" minWidth="-Infinity" prefHeight="25.0" prefWidth="120.0" value="Assiduité" visible="false" >
+
+                <items>
+                    <FXCollections fx:factory="observableArrayList" >
+                        <String fx:value="Présence" />
+                        <String fx:value="Communication" />
+                        <String fx:value="Assiduité" />
+                        <String fx:value="Qualité de travail" />
+                    </FXCollections>
+                </items>
+
+            </ChoiceBox>
+
+
+
+
+                <VBox alignment="TOP_CENTER" prefHeight="115.0" prefWidth="418.0" spacing="5.0">
+                    <children>
+                        <TextArea fx:id="observation" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="72.0" prefWidth="419.0" promptText="Ecrivez une observation sur votre collegue de travail" visible="false" wrapText="true" />
+                        <Button fx:id="submit_rating" onAction="#validate_rating" prefHeight="40" prefWidth="134.0" text="Confirmer l'evaluation" visible="false" />
+                    </children>
+                </VBox>
+            </children>
+
+        </HBox>
+
+
+
+
+
+    </children>
+
+</VBox>

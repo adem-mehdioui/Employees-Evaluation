@@ -1,0 +1,141 @@
+#tf_id{
+
+
+  -fx-text-inner-color: #049bc9;
+    -fx-border-color: #049bc9;
+
+
+}
+
+#vbox_left{
+
+  -fx-border-color : #049bc9;
+  -fx-border-width : 0 5;
+
+
+}
+
+
+.button-raised {
+  -jfx-button-type: RAISED;
+  -fx-background-color: #7cd5f1;
+  -fx-font-weight: BOLD;
+}
+
+.toggle-button {
+  -fx-text-fill: black;
+  -fx-base: transparent;
+  -fx-background: transparent;
+  -fx-focus-color: #049bc9;
+  -fx-border-color: #049bc9;
+  -fx-effect: null;
+}
+
+
+
+.toggle-container>ToggleButton {
+  -fx-background-radius: 0;
+  -fx-background-color: -fx-original-background;
+}
+
+.toggle-container>ToggleButton:selected {
+  -fx-background-color: #049bc9;
+}
+
+#btn_rate {
+
+  -fx-graphic: url("@images/star.png");
+
+
+
+
+
+}
+
+#btn_dashboard{
+
+  -fx-graphic: url("@images/result.png");
+
+
+
+
+}
+
+#btn_history{
+
+  -fx-graphic: url("@images/history.png");
+
+
+
+
+
+}
+
+
+
+#btn_update_employee{
+
+  -fx-graphic: url("@images/edit-user.png");
+
+
+}
+
+
+#btn_disconnect{
+
+  -fx-graphic: url("@images/logout.png");
+
+
+}
+
+
+.text-area {
+  -fx-font-family: Consolas;
+  -fx-font-size: 15;
+  -fx-display-caret:true;
+}
+
+.text-area .content {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#Vbox_home{
+
+  -fx-background-image: url('../images/background_home.png');
+  -fx-background-repeat: stretch;
+  -fx-background-size: 1000 700;
+  -fx-background-position: center center;
+
+}*/
+
+
+
+
+
+
+
+
+
+
+

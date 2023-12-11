@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="borderpane_mainmenu" minHeight="400.0" minWidth="500.0" stylesheets="@app/cssfilepath.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myownapp.MainMenuController">
+
+
+
+     <top>
+
+
+         <MenuBar BorderPane.alignment="CENTER">
+             <menus>
+                 <Menu mnemonicParsing="false" text="File">
+                     <items>
+                         <MenuItem mnemonicParsing="false" text="Close" />
+                     </items>
+                 </Menu>
+                 <Menu mnemonicParsing="false" text="Help">
+                     <items>
+                         <MenuItem mnemonicParsing="false" text="About" />
+                     </items>
+                 </Menu>
+             </menus>
+         </MenuBar>
+
+
+
+     </top>
+
+
+    <left>
+
+        <VBox fx:id="vbox_left" alignment="TOP_CENTER" prefHeight="500.0" prefWidth="237.0" spacing="15.0" styleClass="toggle-container">
+            <children>
+            <Label fx:id="userJob" text="INFORMATICIEN" style="-fx-underline: true" VBox.vgrow="ALWAYS">
+                <font>
+                    <Font  size="10.0" />
+                </font>
+            </Label>
+
+
+
+                <Label fx:id="userinfo" alignment="CENTER" text="User" VBox.vgrow="ALWAYS">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+
+                </Label>
+
+
+
+
+                <ImageView id="boxImage">
+                    <image>
+                        <Image url="@app/@images/profile.png" />
+                    </image>
+
+            </ImageView>
+
+
+                <ToggleButton fx:id="btn_dashboard" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Tableau de bord" onAction="#goto_dashboard"/>
+                <ToggleButton fx:id="btn_rate" mnemonicParsing="false" onAction="#goto_ratingview" prefHeight="50.0" prefWidth="200.0" text="Evaluer un collègue" />
+                <ToggleButton fx:id="btn_history" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Historique" onAction="#goto_historyview" />
+                <ToggleButton fx:id="btn_disconnect" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Se Déconnecter" onAction="#disconnect" />
+                <ToggleButton fx:id="btn_update_employee" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Mettre à jour Employé" onAction="#goto_updateemployee" visible="false" disable="true"/>
+
+
+
+
+            </children>
+            <padding>
+                <Insets bottom="20.0" left="10.0" right="10.0" top="20.0" />
+            </padding>
+
+
+        </VBox>
+
+    </left>
+
+
+
+    <bottom>
+
+
+    </bottom>
+
+
+    <right>
+
+    </right>
+
+
+    <center>
+
+
+
+
+
+
+
+    </center>
+
+
+
+
+
+</BorderPane>

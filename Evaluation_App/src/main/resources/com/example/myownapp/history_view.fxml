@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import org.controlsfx.control.*?>
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<VBox fx:id="vbox_rating" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="379.0" prefWidth="802.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myownapp.HistoryViewController">
+    <children>
+
+        <HBox alignment="TOP_RIGHT" spacing="20">
+            <children>
+
+
+
+                <Button mnemonicParsing="false" onAction="#actualiser" prefHeight="25.0" prefWidth="109.0" text="Actualiser" />
+
+
+                <DatePicker fx:id="date_rating" prefHeight="25.0" prefWidth="201.0" promptText="Sélectionner la date">
+
+
+                </DatePicker>
+
+
+
+
+
+            </children>
+        </HBox>
+
+
+
+
+        <HBox alignment="CENTER_LEFT" prefHeight="60" prefWidth="200">
+
+            <children>
+
+
+                <Label alignment="CENTER" text="L'évaluation (valeur globale attribuée) " HBox.hgrow="ALWAYS">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+
+                </Label>
+
+                <Rating fx:id="evaluation_globale" disable="true" prefHeight="37.0" prefWidth="181.0" rating="0" visible="true" />
+
+                <Label fx:id="note_evaluation" alignment="BOTTOM_CENTER" text="" HBox.hgrow="ALWAYS">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+
+                </Label>
+
+
+
+
+
+            </children>
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </padding>
+
+        </HBox>
+
+
+
+
+
+    </children>
+
+
+
+
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>
