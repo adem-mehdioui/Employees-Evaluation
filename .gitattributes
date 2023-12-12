@@ -1,3 +1,0 @@
-# Force all files in the "src" directory to be recognized as Java
-java/* linguist-vendored linguist-language=java
-
